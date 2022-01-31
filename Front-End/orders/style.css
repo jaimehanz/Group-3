@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)),
+    url("PC background.jpg") center/cover no-repeat fixed;
+    justify-content: stretch;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.table > thead > tr th:first-of-type,
+.table > tbody > tr th:first-of-type,
+.table > thead > tr td:first-of-type,
+.table > tbody > tr td:first-of-type {
+  padding-left: 0;
+}
+.table > thead > tr th:last-of-type,
+.table > tbody > tr th:last-of-type,
+.table > thead > tr td:last-of-type,
+.table > tbody > tr td:last-of-type {
+  padding-right: 0;
+}
+.table-sortable > thead > tr .header > span {
+  cursor: pointer;
+  display: inline-block;
+  padding-right: 16px;
+  padding-left: 0;
+}
+.table-sortable > thead > tr .header.text-right > span {
+  padding-left: 16px;
+  padding-right: 0;
+}
+.table-sortable > thead > tr .headerSortUp > span,
+.table-sortable > thead > tr .headerSortDown > span {
+  position: relative;
+}
+.table-sortable > thead > tr .headerSortUp > span:before,
+.table-sortable > thead > tr .headerSortDown > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid blue;
+  right: 0;
+  bottom: 6px;
+}
+.table-sortable > thead > tr .headerSortUp.text-right > span,
+.table-sortable > thead > tr .headerSortDown.text-right > span {
+  padding-right: 16px;
+  padding-left: 0;
+}
+.table-sortable > thead > tr .headerSortDown > span:before {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid blue;
+  border-bottom: none;
+}
